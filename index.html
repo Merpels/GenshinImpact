@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Genshin Impact</title>
+<style>
+    body {
+        background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/028/663/original/Screenshot_2022-03-07_004044.png?1646581280);
+        min-height: calc(100vh - 100px);
+        height: 100;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        max-width: 800px;
+        margin: 50px auto;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+    h1 {
+        text-align: center;
+        display: block;
+        color: #ecc6b2;
+    }
+    h2 {
+        text-align: center;
+        display: block;
+        border: 3px solid #8b1258;
+        border-radius: 5px;
+        padding: 10px 10px;
+        background-color: #8d57c1;
+        color: #f0a8d6;
+        font-style: italic;
+
+    }
+    img {
+        display: block;
+        margin: 0 auto;
+    }
+    p {
+        font-size: 20px;
+        color: #c098c7;
+        font-weight: bold;
+    }
+    .hoyo {
+    text-decoration: none;
+    color:#b34770;
+    }
+    a:hover {
+        text-decoration: none;
+        color:#faebda;
+    }
+    .Begin {
+        text-align: center;
+        text-decoration: none;
+        color:#f6a9cd;
+        display: block;
+        font-style: italic;
+    }
+      button {
+        margin: 30px auto;
+        display: block;
+        font-style: oblique;
+        font-weight: bold;
+        color:#f0a8d6 ;
+        font-size: 15px;
+        background-color: #aa2552;
+        padding: 10px 30px;
+        border: 1px solid ;
+        border-radius: 10px;
+        box-shadow: 1px 2px 5px #422359;
+        transition: all 20ms ease-in-out;
+      }
+      button:hover {
+        background: #a378cf;
+        color: #c9b7db;
+        cursor: pointer;
+      }
+      h5 {
+          text-align: center;
+          display: block;
+          padding: 2px;
+          margin: 0 auto;
+          color:#cdc4f3;
+          line-height: 0%;
+      }
+</style>
+  </head>
+  <body>
+    <h1>Genshin Impact</h1>
+    <h2>Step Into a Vast Magical World of Adventure</h2>
+    <hr>
+    <img
+      src="https://play-lh.googleusercontent.com/hnS5HttiJp4HznckTVSfxxAxtXWERwYvWUiufgYS-r4wSHcmMrFt7JpGdxFtwe5UXmU" width="400" 
+    ></img>
+    <hr>
+    <p>
+      <em>Genshin Impact (原神)</em> is an action role-playing game developed by Chinese
+      developer <a href="https://en.wikipedia.org/wiki/MiHoYo" class="hoyo" target="blank">
+      miHoYo</a>, and first published in 2020. The game features an
+      anime-style open-world environment and an action-based battle system using
+      elemental magic and character-switching.
+      <br />
+      <br />
+     <em> Genshin Impact </em>takes place in the fantasy world of Teyvat, which is home
+      to seven distinct nations, each of which is tied to a different element
+      and ruled by a different god. The story follows the Traveler, who has
+      traveled across countless worlds with their twin sibling before becoming
+      separated in Teyvat. The Traveler travels in search of the lost sibling
+      with their companion Paimon and becomes involved in the affairs of
+      Teyvat's nations. 
+    </p>
+   <a href="https://genshin.hoyoverse.com/en" class = "Begin" target="blank">
+        Click here for more info</a>
+    <button>
+        Start Playing!
+    </button>
+    <h5>Build by Yurina Andriani</h5>
+    <script>
+              function lab() {
+        let name = prompt("Type in your nickname");
+        let lab = prompt("Would you like to see Hoyolab?");
+        lab = lab.toLowerCase();
+        lab = lab.trim();
+         let h1 = document.querySelector("h1");
+         let h2 = document.querySelector("h2");
+        if (
+          lab === "yes" ||
+          lab === "ya" ||
+          lab === "yup" ||
+          lab === "sure"
+        ) {
+          alert("Welcome, " + name + "!");
+           h1.innerHTML = "This world is full of unknown mysteries";
+           h2.innerHTML = "Just what will we come across this time?";
+           window.open("https://www.hoyolab.com/")
+          window.open("https://genshin.hoyoverse.com/en/download")
+        } else {
+          if (
+            lab === "yesn't" ||
+            lab === "yesnt" ||
+            lab === "no" ||
+            lab === "nay" ||
+            lab === "nah" ||
+            lab === "nah"
+          )
+            alert("Maybe next time");
+             window.open("https://genshin.hoyoverse.com/en/download");
+        }
+      }
+
+      let labButton = document.querySelector("button");
+      labButton.addEventListener("click", lab);
+    </script>
+    </script>
+  </body>
+</html>
